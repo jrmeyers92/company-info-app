@@ -11,16 +11,19 @@ const useStyles = makeStyles((theme) => ({
 function Header() {
 	const classes = useStyles();
 	return (
-		<AppBar>
-			<Toolbar>
-				<Typography variant='h6' className={classes.title}>
-					Work Right
-				</Typography>
-				<Button variant='outlined' color='inherit'>
-					Contribute!
-				</Button>
-			</Toolbar>
-		</AppBar>
+		<div>
+			<AppBar className={classes.appBar}>
+				<Toolbar>
+					<Typography variant='h6' className={classes.title}>
+						Work Right
+					</Typography>
+					<Button variant='outlined' color='inherit'>
+						Contribute!
+					</Button>
+				</Toolbar>
+			</AppBar>
+			<Toolbar />
+		</div>
 	);
 }
 

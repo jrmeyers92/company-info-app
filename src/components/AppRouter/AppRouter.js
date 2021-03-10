@@ -1,12 +1,14 @@
 import React from "react";
 import Header from "../header/Header";
+import ContributeForm from "../ContibuteForm/ContributeForm";
 import { Switch } from "react-router-dom";
 
 const AppRouter = () => {
 	return (
-		<Switch>
+		<div>
 			<Header />
-		</Switch>
+			<ContributeForm />
+		</div>
 	);
 };
 
